@@ -1,7 +1,12 @@
+import pic1 from '../assets/pic1.png';
+
 
 export default function AboutMe() {
     return (
-        <p>
+        <div className="container-fluid bg-primary-subtle">
+            <h2>About Me</h2>
+            <img id='profilepic' className="img-fluid" src={pic1} alt={''}/>
+            <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
             impedit suscipit sed magnam alias in, repellat expedita hic explicabo
@@ -9,6 +14,7 @@ export default function AboutMe() {
             adipisicing elit. Velit voluptate exercitationem quaerat pariatur
             mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
             nostrum temporibus ad omnis nam rerum eligendi.
-        </p>
+            </p>
+        </div>
     )
 }
