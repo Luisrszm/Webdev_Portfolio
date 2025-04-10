@@ -1,18 +1,22 @@
-#root {
-  /*max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;*/
+
+.top-link{
+  font-size:200%;
+  font-weight: 500;
+  padding-left: 2%;
+  color: #61dafbaa;
+}
+.top-link:hover {
+  filter: drop-shadow(0 0 0.1rem rgb(224, 224, 224));
 }
 
 #profilepic {
   border-radius: 50%;
-  padding: 1%;
+  padding: 2.25%;
 }
 
 footer {
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
 }
 
 #ffooter {
@@ -21,46 +25,198 @@ footer {
   gap: 50px;
 }
 
-.resized-image {
+#resized-image {
   width: 40px; /* Set the desired width */
 }
 
-.resized-image:hover {
-  box-shadow: gold;
+#resized-image:hover {
+  filter: drop-shadow(0 0 0.2rem rgb(163, 163, 163));
+  
 }
 
-.logo {
-  height: 6em;
+.links-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.link {
+  font-weight: 500;
+  font-family: sans-serif;
+  height: 60em;
+  color: #61dafbaa;
+  text-decoration: none;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+} 
+.link:hover {
+  filter: drop-shadow(0 0 0.1em #fffefe);
+  border-color: #fffefe;
+  border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+div p {
+  text-align: justify;
+}
+.centreo {
+  text-align: center;
+  padding-top: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: grey;
+}
+
+/* ----------- portfolio -----------*/
+
+.asize {
+  text-decoration: none;
+  font-size: 3rem;
+  padding-top: 115px;
+  padding-bottom: 115px;
+  width: 100%;
+  border: 1px solid black;
+  padding-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.MagicE_Manager {
+  margin-bottom: 20px;
+  width: 500px;
+  height: 300px;
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN21ydmltbHM0NHlodTc5ZXN0MWphOGpuYjQxbDVyajA2Yng0aWRycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lbcLMX9B6sTsGjUmS3/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.MagicE_Manager-title {
+  color: black;
+  display: none;
 }
 
-.card {
-  padding: 2em;
+.MagicE_Manager-div {
+  width: 500px;
+  height: 300px;
+  will-change: background-color;
+  transition: background-color 600ms;
+  display: flex;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.MagicE_Manager:hover > .MagicE_Manager-div {
+  background-color: white;
+  opacity: 50%;
+}
+
+.MagicE_Manager-div:hover > .MagicE_Manager-title {
+  display: block;
+}
+
+.Webdev_Portfolio {
+  margin-bottom: 20px;
+  width: 500px;
+  height: 300px;
+  background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjN3eGJ6ajQ2cWFjeTdvMHVsb3lwN3FqYXJ1OXVwM2F1d2ppZ3poYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1Et7Qw1XjvunS0Io/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Webdev_Portfolio-title {
+  color: black;
+  display: none;
+  padding-left: 2%;
+}
+
+.Webdev_Portfolio-div {
+  width: 500px;
+  height: 300px;
+  will-change: background-color;
+  transition: background-color 600ms;
+  display: flex;
+  align-items: center;
+}
+
+.Webdev_Portfolio:hover > .Webdev_Portfolio-div {
+  background-color: white;
+  opacity: 50%;
+}
+
+.Webdev_Portfolio-div:hover > .Webdev_Portfolio-title {
+  display: block;
+}
+
+.READMEGen {
+  margin-bottom: 20px;
+  width: 500px;
+  height: 300px;
+  background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWJhb3dzbGlsYXRsenFsaDI1Z2x3enF2Y29qM25lbXIxc21qeHJyeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/sULKEgDMX8LcI/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.READMEGen-title {
+  color: black;
+  display: none;
+  padding-left: 2%;
+}
+
+.READMEGen-div {
+  width: 500px;
+  height: 300px;
+  will-change: background-color;
+  transition: background-color 600ms;
+  display: flex;
+  align-items: center;
+}
+
+.READMEGen:hover > .READMEGen-div {
+  background-color: white;
+  opacity: 60%;
+}
+
+.READMEGen-div:hover > .READMEGen-title {
+  display: block;
+}
+
+.TeachersCheck {
+  margin-bottom: 20px;
+  width: 500px;
+  height: 300px;
+  background-image: url('https://media.giphy.com/media/JuCJlNpuDGO3k8ZG4z/giphy.gif?cid=790b7611i96zrhxg2hr1k3inwf5o3wfn5b92d6lvi4ayfgt6&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TeachersCheck-title {
+  color: black;
+  display: none;
+  padding-left: 2%;
+}
+
+.TeachersCheck-div {
+  width: 500px;
+  height: 300px;
+  will-change: background-color;
+  transition: background-color 600ms;
+  display: flex;
+  align-items: center;
+}
+
+.TeachersCheck:hover > .TeachersCheck-div {
+  background-color: white;
+  opacity: 60%;
+}
+
+.TeachersCheck-div:hover > .TeachersCheck-title {
+  display: block;
 }

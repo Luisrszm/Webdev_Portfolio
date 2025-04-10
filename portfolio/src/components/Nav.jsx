@@ -3,14 +3,14 @@ import _default from "eslint-plugin-react-refresh";
 function Nav({ links }) {
     console.log(links)
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
-                <a href="/"><h2>Luis Reséndez</h2></a>
-                <ul className="navbar-nav">
+                <a className="navbar-brand top-link" href="/">Luis Reséndez</a>
+                <div className="links-div">
                     {links.map((link) =>
-                        <li key={link.key}><a className="navbar-brand" href={link.props.to}>{link.props.children}</a></li>
+                        <li key={link.key}><a className="navbar-link link" href={link.props.to}>{link.props.children}</a></li>
                     )}
-                </ul>
+                </div>
             </div>
         </nav>
 );
