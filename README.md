@@ -1,4 +1,4 @@
-# MagicE-Manager | Magic Employee Manager 🚀
+# Web Developer Portfolio - My Portfolio 🚀
 
 ## Description
 
